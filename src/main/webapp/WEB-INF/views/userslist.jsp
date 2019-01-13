@@ -17,7 +17,7 @@
 		<%@include file="authheader.jsp" %>	
 		<div class="panel panel-default">
 			  <!-- Default panel contents -->
-		  	<div class="panel-heading"><span class="lead">List of Users </span></div>
+		  	<div class="panel-heading"><span class="lead">List of patients </span></div>
 			<table class="table table-hover">
 	    		<thead>
 		      		<tr>
@@ -54,7 +54,7 @@
 		</div>
 		<sec:authorize access="hasRole('ADMIN')">
 		 	<div class="well">
-		 		<a href="<c:url value='/newuser' />">Add New User</a>
+		 		<a href="<c:url value='/newuser' />">Add New Patient</a>
 		 	</div>
 	 	</sec:authorize>
    	</div>

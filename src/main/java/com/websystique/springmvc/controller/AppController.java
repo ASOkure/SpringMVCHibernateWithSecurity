@@ -191,6 +191,19 @@ public class AppController {
 	    }
 	}
 
+	
+	/**
+	 * This method handles login GET requests.
+	 * If users is already logged-in and tries to goto login page again, will be redirected to list page.
+	 */
+	@RequestMapping(value = "/coredataset", method = RequestMethod.GET)
+	public String coredataPage() {
+		
+			return "coredataset";
+	    } 
+	
+	
+	
 	/**
 	 * This method handles logout requests.
 	 * Toggle the handlers if you are RememberMe functionality is useless in your app.
